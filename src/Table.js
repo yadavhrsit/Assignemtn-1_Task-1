@@ -112,7 +112,7 @@ function Table({ data }) {
                     </tbody>
                 </table>
             </div>
-            <div colSpan={22} className="flex justify-end gap-6 pt-6">
+            <div colSpan={22} className="flex flex-col items-center sm:flex-row sm:justify-end gap-6 pt-6">
                 <CSVLink data={filteredData} headers={headers} className=' py-2 px-4 bg-slate-500 text-white font-semibold rounded-lg'>Download CSV</CSVLink>
                 <button className='py-2 px-4 bg-slate-500 text-white font-semibold rounded-lg' onClick={downloadExcel}>Download as Excel</button>
                 <ReactPaginate
